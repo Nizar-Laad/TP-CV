@@ -1,0 +1,22 @@
+html,button, input, select, textarea{
+	color:#444;
+}
+
+html{ 	front-size: 1em; line-height: 1.4; }
+body{background-color : #999}
+
+div#wrapper {
+max-width:900px;
+min-width:320px;
+margin: 0 auto;
+}
+
+img {
+	float :right;
+	border-color: #ccc;
+	border:3px;
+	color:white;
+	box-shadow:0px 2px 4px rgba(0,0,0,0.2);
+}
+
+h1 {font-family: aladin, sans-serif;}
