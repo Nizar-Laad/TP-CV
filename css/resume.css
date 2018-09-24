@@ -9,12 +9,14 @@ div#wrapper {
 max-width:900px;
 min-width:320px;
 margin: 0 auto;
+font-family :aclonica, sans-serif;
 }
 
 img {
 	float :right;
 	border-color: #ccc;
-	border:3px;
+	border:2px solid;
+	border-radius:30px;
 	color:white;
 	box-shadow:0px 2px 4px rgba(0,0,0,0.2);
 }
