@@ -12,14 +12,16 @@
 		<meta name="keywords" content="web,developer,resume"/>
 		<meta name="author" content="Laadnani">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="cvscript.js"> </script>
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	</head> <body>
 		<div id="wrapper" itemscope itemtype="https://schema.org/Person">
-		<header><img src="photo_identite.jpg" alt="photo_identité" title="photo_identité" > </header>
+		<header><img src="photo_identite.jpg" alt="photo_identité" title="photo_identité" /> </header>
 		<i class="icon-camera-retro">
-		<span itemprop="familyname"><h1>Laadnani Nizar</h1></span>
 		<dl>
+		<span itemprop="familyname"><h1>Laadnani Nizar</h1></span>
+		
 		<dd><span itemprop="hasOccupation"><h2>Etudiant </h2></span></dd>
 		<dd>Age : 22 </dd>
 		<dd>Nationalité : Marocain </dd>
@@ -29,14 +31,45 @@
 		</i>
 		<dl>
 			<dt><h2>Formation</h2></dt>
-			<dd>2015-2018 Ecole Nationale des Sciences Appliquées de Tanger Cycle ingénieur. Filière génie informatique </dd>
-			<dd>2013-2015 Lycée Moulay Al Hassan Classes préparatoires scientifiques aux grandes écoles, filière PSI </dd>
+			<dd><button button onclick="hideshow('ensa','fo')">2015-2018 ENSA Tanger </button>
+			<div id="ensa" class="fo"> Ecole Nationale des Sciences Appliquées de Tanger Cycle ingénieur. Filière génie informatique</div>
+			</dd>
+
+			<dd><button button onclick="hideshow('cpge','fo')">2013-2015 CPGE Tanger </button>
+			<div id="cpge" class="fo"> 2013-2015 Lycée Moulay Al Hassan Classes préparatoires scientifiques aux grandes écoles, filière PSI </div>
+			</dd>
+			
+			
+                	<dt><h2>Experiences professionnelles</h2></dt>
+			<dd><button button onclick="hideshow('silog','ep')">07/2017-08/2017 Stage à la société SILOG INT </button> 
+			    <div id="silog" class="ep">Stage d'initiation <br> <b>Technologies utilisées :</b> JEE/Spring MVC/Hibernate </div>
+			</dd>
+			<dd><button button onclick="hideshow('meds','ep')">07/2018-08/2018 Stage à la société MEDSOFTWORKS </button>
+				<div id="meds" class="ep">Traitement des données en temps réel avec AMQP <br> <b> Technlogies utilisées :</b>RabbitMQ/Node.js/SQLITE </div>
+			</dd>
 			
 			<dt><h2>Compétences</h2></dt>
-			<dd>HTML</dd>
-			<dd>CSS</dd>
-			<dd>JAVASCRIPT</dd>
-			<dd>JAVA</dd>
+			<dd>
+				<button onclick="hideshow('html','cp')" >HTML</button>
+				<div id="html" class="cp"> L’HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour représenter les pages web. C’est un langage permettant d’écrire de l’hypertexte, d’où son nom. HTML permet également de structurer sémantiquement et logiquement et de mettre en forme le contenu des pages, d’inclure des ressources multimédias dont des images, des formulaires de saisie et des programmes informatiques. Il permet de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web. Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). HTML est initialement dérivé du Standard Generalized Markup Language (SGML). </div>
+			</dd>
+			<dd>
+				<button button onclick="hideshow('css','cp')" >CSS</button>
+				<div id="css" class="cp">Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000. </div>			
+			</dd>
+			<dd>
+				<button button onclick="hideshow('javascript','cp')" >JAVASCRIPT</button>
+				<div id="javascript" class="cp">JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs2 avec l'utilisation (par exemple) de Node.js3. C'est un langage orienté objet à prototype, c'est-à-dire que les bases du langage et ses principales interfaces sont fournies par des objets qui ne sont pas des instances de classes, mais qui sont chacun équipés de constructeurs permettant de créer leurs propriétés, et notamment une propriété de prototypage qui permet d'en créer des objets héritiers personnalisés. En outre, les fonctions sont des objets de première classe. Le langage supporte le paradigme objet, impératif et fonctionnel. JavaScript est le langage possédant le plus large écosystème grâce à son gestionnaire de dépendances npm, avec environs 500 000 paquets en août 20174.
+
+JavaScript a été créé en 1995 par Brendan Eich. Il a été standardisé sous le nom d'ECMAScript en juin 1997 par Ecma International dans le standard ECMA-262. Le standard ECMA-262 en est actuellement à sa 8e édition. JavaScript n'est depuis qu'une implémentation d'ECMAScript, celle mise en œuvre par la fondation Mozilla. L'implémentation d'ECMAScript par Microsoft (dans Internet Explorer jusqu'à sa version 9) se nomme JScript, tandis que celle d'Adobe Systems se nomme ActionScript. </div>
+			</dd>
+			<dd><button button onclick="hideshow('java','cp')" >JAVA</button>
+				<div id="java" class="cp">Java est un langage de programmation orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems, avec le soutien de Bill Joy (cofondateur de Sun Microsystems en 1982), présenté officiellement le 23 mai 1995 au SunWorld.
+
+La société Sun a été ensuite rachetée en 2009 par la société Oracle qui détient et maintient désormais Java.
+
+La particularité et l'objectif central de Java est que les logiciels écrits dans ce langage doivent être très facilement portables sur plusieurs systèmes d’exploitation tels que Unix, Windows, Mac OS ou GNU/Linux, avec peu ou pas de modifications, mais qui ont l'inconvénient d'être plus lourd à l'exécution (en mémoire et en temps processeur) à cause de sa machine virtuelle. Pour cela, divers plateformes et frameworks associés visent à guider, sinon garantir, cette portabilité des applications développées en Java. </div>
+			</dd>
 			<dt><h2>Langues</h2></dt>
 			<dd>Arabe</dd>
 			<dd>Français</dd>
