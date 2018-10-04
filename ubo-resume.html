@@ -2,9 +2,9 @@
 <html lang="fr">
 	<head>
 		<script src="http://use.edgefonts.net/aladin;aclonica.js"></script>
-		<link rel="stylesheet" href="css/resume.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/resume.css" /> 
 		<link rel="stylesheet" href="https///maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/fontawesome.min.css">
-		<link rel="stylesheet" href="css/responsive.css" />
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 		<meta charset="utf-8">
 		<meta http-equi="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Mon CV</title>
@@ -12,7 +12,8 @@
 		<meta name="keywords" content="web,developer,resume"/>
 		<meta name="author" content="Laadnani">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="cvscript.js"> </script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+		
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	</head> <body>
@@ -49,34 +50,57 @@
 			</dd>
 			
 			<dt><h2>Compétences</h2></dt>
-			<dd>
-				<button onclick="hideshow('html','cp')" >HTML</button>
-				<div id="html" class="cp"> L’HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour représenter les pages web. C’est un langage permettant d’écrire de l’hypertexte, d’où son nom. HTML permet également de structurer sémantiquement et logiquement et de mettre en forme le contenu des pages, d’inclure des ressources multimédias dont des images, des formulaires de saisie et des programmes informatiques. Il permet de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web. Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). HTML est initialement dérivé du Standard Generalized Markup Language (SGML). </div>
-			</dd>
-			<dd>
-				<button button onclick="hideshow('css','cp')" >CSS</button>
-				<div id="css" class="cp">Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000. </div>			
-			</dd>
-			<dd>
-				<button button onclick="hideshow('javascript','cp')" >JAVASCRIPT</button>
-				<div id="javascript" class="cp">JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs2 avec l'utilisation (par exemple) de Node.js3. C'est un langage orienté objet à prototype, c'est-à-dire que les bases du langage et ses principales interfaces sont fournies par des objets qui ne sont pas des instances de classes, mais qui sont chacun équipés de constructeurs permettant de créer leurs propriétés, et notamment une propriété de prototypage qui permet d'en créer des objets héritiers personnalisés. En outre, les fonctions sont des objets de première classe. Le langage supporte le paradigme objet, impératif et fonctionnel. JavaScript est le langage possédant le plus large écosystème grâce à son gestionnaire de dépendances npm, avec environs 500 000 paquets en août 20174.
+			
+				<dd class="tooltip" ><span class="tooltiptext"> L’HyperText Markup Language, généralement abrégé HTML, est le langage de balisage conçu pour représenter les pages web. C’est un langage permettant d’écrire de l’hypertexte, d’où son nom. HTML permet également de structurer sémantiquement et logiquement et de mettre en forme le contenu des pages, d’inclure des ressources multimédias dont des images, des formulaires de saisie et des programmes informatiques. Il permet de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web. Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). HTML est initialement dérivé du Standard Generalized Markup Language (SGML).  </span> HTML </dd><br>
+				<dd class="tooltip" ><span class="tooltiptext"> Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.</span> CSS </dd><br>
+				<dd class="tooltip" ><span class="tooltiptext"> JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs2 avec l'utilisation (par exemple) de Node.js3. C'est un langage orienté objet à prototype, c'est-à-dire que les bases du langage et ses principales interfaces sont fournies par des objets qui ne sont pas des instances de classes, mais qui sont chacun équipés de constructeurs permettant de créer leurs propriétés, et notamment une propriété de prototypage qui permet d'en créer des objets héritiers personnalisés. En outre, les fonctions sont des objets de première classe. Le langage supporte le paradigme objet, impératif et fonctionnel. JavaScript est le langage possédant le plus large écosystème grâce à son gestionnaire de dépendances npm, avec environs 500 000 paquets en août 2017.
 
-JavaScript a été créé en 1995 par Brendan Eich. Il a été standardisé sous le nom d'ECMAScript en juin 1997 par Ecma International dans le standard ECMA-262. Le standard ECMA-262 en est actuellement à sa 8e édition. JavaScript n'est depuis qu'une implémentation d'ECMAScript, celle mise en œuvre par la fondation Mozilla. L'implémentation d'ECMAScript par Microsoft (dans Internet Explorer jusqu'à sa version 9) se nomme JScript, tandis que celle d'Adobe Systems se nomme ActionScript. </div>
-			</dd>
-			<dd><button button onclick="hideshow('java','cp')" >JAVA</button>
-				<div id="java" class="cp">Java est un langage de programmation orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems, avec le soutien de Bill Joy (cofondateur de Sun Microsystems en 1982), présenté officiellement le 23 mai 1995 au SunWorld.
+JavaScript a été créé en 1995 par Brendan Eich. Il a été standardisé sous le nom d'ECMAScript en juin 1997 par Ecma International dans le standard ECMA-262. Le standard ECMA-262 en est actuellement à sa 8e édition. JavaScript n'est depuis qu'une implémentation d'ECMAScript, celle mise en œuvre par la fondation Mozilla. L'implémentation d'ECMAScript par Microsoft (dans Internet Explorer jusqu'à sa version 9) se nomme JScript, tandis que celle d'Adobe Systems se nomme ActionScript. </span> JAVASCRIPT </dd><br>
+				<dd class="tooltip" ><span class="tooltiptext"> Java est un langage de programmation orienté objet créé par James Gosling et Patrick Naughton, employés de Sun Microsystems, avec le soutien de Bill Joy (cofondateur de Sun Microsystems en 1982), présenté officiellement le 23 mai 1995 au SunWorld.
 
 La société Sun a été ensuite rachetée en 2009 par la société Oracle qui détient et maintient désormais Java.
 
-La particularité et l'objectif central de Java est que les logiciels écrits dans ce langage doivent être très facilement portables sur plusieurs systèmes d’exploitation tels que Unix, Windows, Mac OS ou GNU/Linux, avec peu ou pas de modifications, mais qui ont l'inconvénient d'être plus lourd à l'exécution (en mémoire et en temps processeur) à cause de sa machine virtuelle. Pour cela, divers plateformes et frameworks associés visent à guider, sinon garantir, cette portabilité des applications développées en Java. </div>
-			</dd>
+La particularité et l'objectif central de Java est que les logiciels écrits dans ce langage doivent être très facilement portables sur plusieurs systèmes d’exploitation tels que Unix, Windows, Mac OS ou GNU/Linux, avec peu ou pas de modifications, mais qui ont l'inconvénient d'être plus lourd à l'exécution (en mémoire et en temps processeur) à cause de sa machine virtuelle. Pour cela, divers plateformes et frameworks associés visent à guider, sinon garantir, cette portabilité des applications développées en Java.</span> JAVA</dd><br>
+				
+			
+			
 			<dt><h2>Langues</h2></dt>
-			<dd>Arabe</dd>
-			<dd>Français</dd>
-			<dd>Anglais</dd>
+			<dd>Arabe
+<span class="eval Arabe ">
+		<i class="fa fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+</span></dd>
+			<dd>Français
+		<span class="eval Francais ">
+		<i class="fa fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+</span></dd>
+			<dd>Anglais
+<span class="eval Anglais ">
+		<i class="fa fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+</span></dd>
+			<dd>Espagnol
+<span class="eval Espagnol ">
+		<i class="fa fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+		<i class="far fa-star"></i>
+</span></dd>
 		</dl>
 		<footer> <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHnkF2Mb--FwwAAAWYMDgeQ_AnSLJYE5SK3cKjiKH8R22WDFrWAvWfBL-KPV61hvI9jy_RCzlBtFwAOUsTJEylI0xcYEC3SmbnM5KW65fc5PxXr9jgyPVzxmSmie95I8nLh6oE=&originalReferer=https://www.linkedin.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnizar-laadnani-098aa9ab">Linkedin </a> </footer> </div>
 	
 	</body>
+<script src="cvscript.js"> </script>
 </html> 
 
